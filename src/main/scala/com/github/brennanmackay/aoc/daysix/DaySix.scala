@@ -1,7 +1,7 @@
 package com.github.brennanmackay.aoc.daysix
 
 import com.github.brennanmackay.aoc.daysix.DaySix.max
-import common.Common
+import com.github.brennanmackay.aoc.common.Common
 
 import scala.collection.mutable
 

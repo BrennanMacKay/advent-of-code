@@ -1,4 +1,4 @@
-package common
+package com.github.brennanmackay.aoc.common
 
 import scala.io.Source
 

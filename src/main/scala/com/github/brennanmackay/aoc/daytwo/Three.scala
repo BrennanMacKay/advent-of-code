@@ -1,6 +1,6 @@
 package com.github.brennanmackay.aoc.daytwo
 
-import common.Common
+import com.github.brennanmackay.aoc.common.Common
 
 import scala.collection.mutable
 

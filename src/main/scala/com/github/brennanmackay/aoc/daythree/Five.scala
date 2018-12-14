@@ -1,6 +1,6 @@
 package com.github.brennanmackay.aoc.daythree
 
-import common.Common
+import com.github.brennanmackay.aoc.common.Common
 
 object Five {
 

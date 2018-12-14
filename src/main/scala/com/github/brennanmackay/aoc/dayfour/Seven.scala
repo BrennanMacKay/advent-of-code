@@ -3,7 +3,7 @@ package com.github.brennanmackay.aoc.dayfour
 import java.time.{LocalDate, LocalDateTime}
 import java.time.format.DateTimeFormatter
 
-import common.Common
+import com.github.brennanmackay.aoc.common.Common
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
