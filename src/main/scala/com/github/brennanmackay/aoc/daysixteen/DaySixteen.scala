@@ -1,3 +1,5 @@
+package com.github.brennanmackay.aoc.daysixteen
+
 import com.github.brennanmackay.aoc.common.Common
 
 object DaySixteen {
@@ -132,7 +134,7 @@ object DaySixteen {
         }).filter(_._3 == 1)
         
         val ops = res.flatMap(_._2).toSet
-        //println(s"ops located: ${ops}")
+        println(s"ops located: ${ops.map(_.name).mkString(", ")}")
         
         val entries = res.map(k => {
           k._1.instruction.opcode -> k._2.head
@@ -228,7 +230,7 @@ object DaySixteen {
         Op(eqrr, "eqrr"))
 
 
-    val tests = readTests("day-sixteen-p1.txt")
+    val tests = readTests("day-sixteen-p1-ken.txt")
     
     val res = tests.map(test => {
       unknownOps.map(op => {
@@ -240,9 +242,11 @@ object DaySixteen {
     
     val ops = assignOps(unknownOps, tests)
     
+    println(ops.mkString("\n"))
+    
     //println(ops)
     
-    val program = readInstructions("day-sixteen-p2.txt")
+    val program = readInstructions("day-sixteen-p2-ken.txt")
     val result = runProgram(program, ops)
     
     println(result.mkString(", "))
